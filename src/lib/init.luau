@@ -250,7 +250,7 @@ function Prefab.replaceItem(thing: Instance, prefab: Instance, keepMode: "target
 		tags = {},
 	}
 	
-	if keepMode == "target" or keepMode == "both" then
+	if keepMode == "target" or keepMode == "both" or keepMode == nil then
 		local keep = Prefab.getKeepValues(thing)
 		
 		copyArray(keep.properties, keepValues.properties)
@@ -258,7 +258,7 @@ function Prefab.replaceItem(thing: Instance, prefab: Instance, keepMode: "target
 		copyArray(keep.tags, keepValues.tags)
 	end
 
-	if keepMode == "prefab" or keepMode == "both" then
+	if keepMode == "prefab" or keepMode == "both" or keepMode == nil then
 		local keep = Prefab.getKeepValues(prefab)
 
 		copyArray(keep.properties, keepValues.properties)
