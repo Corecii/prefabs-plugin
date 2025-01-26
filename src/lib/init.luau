@@ -543,7 +543,7 @@ function Prefab.replaceAll(id: string): { [Instance]: Instance }
 			continue
 		end
 		if item:GetAttribute("PrefabId") == id and not item:GetAttribute("PrefabForked") then
-			local newItem = Prefab.replaceItem(item, prefab)
+			local newItem = Prefab.replaceItem(item, prefab, "both")
 			map[item] = newItem
 		end
 	end
