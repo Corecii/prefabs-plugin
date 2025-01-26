@@ -1,0 +1,28 @@
+name = "corecii/prefabs"
+version = "1.0.0"
+description = "A library for managing prefabs. Used internally by the Prefabs plugin."
+authors = ["Corecii / Shae A. (https://github.com/Corecii)"]
+repository = "https://github.com/Corecii/prefabs-plugin"
+license = "MIT"
+
+includes = [
+	"pesde.toml",
+	"README.md",
+	"CHANGELOG.md",
+	"LICENSE",
+	"src/lib/**",
+	"selene.toml",
+	".luaurc",
+]
+
+[target]
+environment = "roblox"
+lib = "src/lib/init.luau"
+build_files = ["src/lib"]
+
+[scripts]
+roblox_sync_config_generator = ".pesde/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/sourcemap_generator.luau"
+
+[indices]
+default = "https://github.com/daimond113/pesde-index"

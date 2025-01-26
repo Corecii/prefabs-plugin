@@ -1,0 +1,15 @@
+{
+  "name": "prefabs-dev",
+  "tree": {
+    "$className": "DataModel",
+    "StarterGui": {
+      "Prefabs": {
+        "$path": "plugin.project.json"
+      },
+      "$properties": {
+        "ScreenOrientation": "Sensor",
+        "ShowDevelopmentGui": false
+      }
+    }
+  }
+}

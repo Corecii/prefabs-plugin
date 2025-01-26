@@ -1,0 +1,12 @@
+
+# This file lists tools managed by Rokit, a toolchain manager for Roblox projects.
+# For more information, see https://github.com/filiptibell/rokit
+
+# New tools can be added by running `rokit add <tool>` in a terminal.
+[tools]
+rojo = "upliftgames/rojo@7.4.0-uplift.syncback.rc.20"
+lune = "filiptibell/lune@0.8.2"
+lunar = "corecii/lunar@0.1.0"
+
+# This is against recommendation but it's easy and works for now.
+pesde = "daimond113/pesde@0.5.3+registry.0.1.2"
